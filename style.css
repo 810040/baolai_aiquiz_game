@@ -1,0 +1,95 @@
+:root{
+    --bg-dark:#061826;
+    --bg-card:#0b2438;
+    --neon-blue:#00e5ff;
+    --neon-green:#00ff9d;
+    --text:#e8ffff;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #03131f,
+        #06283d,
+        #003b46
+    );
+    color:var(--text);
+    font-family:"Microsoft JhengHei",sans-serif;
+}
+
+/* 卡片 */
+.card,
+.container,
+.quiz-box{
+    background:rgba(11,36,56,.9);
+    border:1px solid var(--neon-blue);
+    border-radius:20px;
+    box-shadow:
+        0 0 10px var(--neon-blue),
+        0 0 25px rgba(0,229,255,.5);
+}
+
+/* 標題 */
+h1,h2,h3{
+    color:var(--neon-blue);
+    text-shadow:
+        0 0 5px var(--neon-blue),
+        0 0 15px var(--neon-blue);
+}
+
+/* 分數 */
+.score{
+    color:var(--neon-green);
+    text-shadow:
+        0 0 8px var(--neon-green),
+        0 0 18px var(--neon-green);
+}
+
+/* 按鈕 */
+button{
+    background:#003b46;
+    color:white;
+    border:2px solid var(--neon-blue);
+    border-radius:12px;
+    padding:12px 20px;
+    transition:.3s;
+    cursor:pointer;
+    box-shadow:0 0 10px var(--neon-blue);
+}
+
+button:hover{
+    background:var(--neon-blue);
+    color:black;
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 15px var(--neon-blue),
+        0 0 35px var(--neon-blue);
+}
+
+/* 答案選項 */
+.option{
+    background:#0b2438;
+    border:1px solid var(--neon-green);
+    color:white;
+    margin:10px 0;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.option:hover{
+    background:rgba(0,255,157,.15);
+    box-shadow:0 0 15px var(--neon-green);
+}
+
+/* 輸入框 */
+input{
+    background:#021018;
+    color:white;
+    border:2px solid var(--neon-blue);
+    border-radius:10px;
+}
+
+input:focus{
+    outline:none;
+    box-shadow:0 0 15px var(--neon-blue);
+}
